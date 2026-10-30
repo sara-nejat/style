@@ -10,7 +10,8 @@ A clean, editorial fashion landing page, crafted with care for detail and a refi
 
 <br>
 
-<img src="Screenshot%20(63).png" alt="Style website, hero section preview" width="100%">
+<img src="style/assets
+/img/Screenshot%(63).png" alt="Style website, hero section preview" width="100%">
 
 </div>
 
