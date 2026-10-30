@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@font-face {
+    font-family: "font1";
+    src: url(../font/Jost-ExtraBold.ttf);
+}
+@font-face {
+    font-family: "font2";
+    src: url(../font/Shabnam-Medium.ttf);
+}
+@font-face {
+    font-family: "font3";
+    src: url(../font/Vazirmatn-ExtraBold.ttf);
+}
+body,
+button,
+input{
+    font-family: "font1";
+}
+.F{
+    font-family: "font2";
+}
+.f3{
+        font-family: "font2";
+}
