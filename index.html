@@ -13,9 +13,9 @@
     <header>
         <nav class="2xl:container 2xl:mx-auto px-5 py-4 flex justify-between items-center bg-[#f6ece3]">
 
-            <div>
+            <div class="hidden md:block">
                 <button
-                    class="hidden md:flex items-center rounded-3xl bg-[#e2d3c6] w-auto p-3 cursor-pointer h-9 gap-1 transition-transform duration-700  hover:translate-x-1.5 hover:text-[#5f0000]">Sign
+                    class="md:flex items-center rounded-3xl bg-[#e2d3c6] w-auto p-3 cursor-pointer h-9 gap-1 transition-transform duration-700  hover:translate-x-1.5 hover:text-[#5f0000]">Sign
                     in
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
                         stroke="currentColor" class="size-4">
@@ -25,30 +25,30 @@
                 </button>
             </div>
 
-            <ul class="flex items-center gap-5 md:gap-8">
-                <li><a href="#"
-                        class="text-[7px] md:text-xs lg:text-sm transition-colors duration-300 hover:text-[#5f0000]">NEW
+            <ul class="flex items-center gap-6 md:gap-8">
+                <li class="hidden md:block"><a href="#"
+                        class="text-[12px] lg:text-sm transition-colors duration-300 hover:text-[#5f0000]">NEW
                         IN</a></li>
                 <li><a href="#"
-                        class="text-[7px] md:text-xs lg:text-sm transition-colors duration-300 hover:text-[#5f0000]">WOMEN</a>
+                        class="text-[12px] lg:text-sm transition-colors duration-300 hover:text-[#5f0000]">WOMEN</a>
                 </li>
                 <li><a href="#"
-                        class="text-[7px] md:text-xs lg:text-sm transition-colors duration-300 hover:text-[#5f0000]">MEN</a>
+                        class="text-[12px] lg:text-sm transition-colors duration-300 hover:text-[#5f0000]">MEN</a>
+                </li>
+                <li class="hidden md:block"><a href="#"
+                        class="text-[12px] lg:text-sm transition-colors duration-300 hover:text-[#5f0000]">COLLECTIONS</a>
                 </li>
                 <li><a href="#"
-                        class="text-[7px] md:text-xs lg:text-sm transition-colors duration-300 hover:text-[#5f0000]">COLLECTIONS</a>
+                        class="text-[12px] lg:text-sm transition-colors duration-300 hover:text-[#5f0000]">ACCESSORIES</a>
                 </li>
-                <li><a href="#"
-                        class="text-[10px] md:text-xs lg:text-sm transition-colors duration-300 hover:text-[#5f0000]">ACCESSORIES</a>
-                </li>
-                <li><a href="#"
-                        class="hidden md:flex text-xs lg:text-sm transition-colors duration-300 hover:text-[#5f0000]">SALE</a>
+                <li class="hidden md:block"><a href="#"
+                        class="text-[12px] lg:text-sm transition-colors duration-300 hover:text-[#5f0000]">SALE</a>
                 </li>
             </ul>
 
 
 
-            <div class="flex items-center gap-5">
+            <div class="flex items-center gap-3 md:gap-5">
                 <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
                         stroke="currentColor" class="size-4 md:size-5">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -76,66 +76,75 @@
     </header>
     <main>
         <section>
-            <div class="2xl:container 2xl:mx
-
--auto md:hidden overflow-hidden relative">
+            <div class="2xl:container 2xl:mx-auto md:hidden overflow-hidden relative">
                 <img src="assets/img/file_000000002e9081f4873aafc545a4ab8b.png" alt="style-women"
                     class="w-full h-full object-cover">
 
                 <div class="absolute bottom-20 left-0">
                     <button
-                        class="text-xl bg-[#f6ece3] text-black p-1  transition-colors duration-700 hover:text-[#5f0000]"><a
-                            href="#">NEW ARRIVALS</a></button>
+                        class="text-xl bg-[#f6ece3] text-black p-1  transition-colors duration-700 hover:text-[#5f0000] cursor-pointer">NEW
+                        ARRIVALS</button>
                 </div>
             </div>
             <div class="2xl:container 2xl:mx-auto hidden md:block overflow-hidden relative">
                 <img src="assets/img/file_00000000e0f88210ae86089151318052.png" alt="style-women">
                 <div class="absolute bottom-0 left-5 lg:left-11 ">
-                    <button class="bg-black text-white text-xl transition-colors duration-700 hover:bg-[#5f0000] p-1"><a
-                            href="#">SHOP NEW ARRIVALS</a></button>
                     <button
-                        class="text-black border text-xl transition-colors duration-700 hover:border-[#5f0000] p-1"><a
-                            href="#">EXPLORE COLLECTIONS</a></button>
+                        class="bg-black text-white text-xl transition-colors duration-700 hover:bg-[#5f0000] p-1 cursor-pointer">SHOP
+                        NEW ARRIVALS</button>
+                    <button
+                        class="text-black border text-xl transition-colors duration-700 hover:border-[#5f0000] p-1 cursor-pointer">EXPLORE
+                        COLLECTIONS</button>
                 </div>
             </div>
             <article
-                class="2xl:container 2xl:mx-auto F flex justify-between items-center mt-8 mb-8 px-4 gap-10 md:mt-16 md:mb-14 md:px-8">
-                <h2 class="text-base md:text-xl">250 <sup>+</sup>
+                class="2xl:container 2xl:mx-auto text-center F grid grid-cols-2 gap-x-5 gap-y-5 mt-8 mb-8 px-1  md:grid-cols-4 md:mt-16 md:mb-14 ">
+                <div>
+                    <h2 class="text-base md:text-2xl">250 <sup>+</sup>
+                    </h2>
                     <P class="text-xs md:text-sm pt-5">PREMIUM STYle</P>
-                </h2>
-                <h2 class="text-base md:text-2xl">10K <sup>+</sup>
+                </div>
+                <div>
+                    <h2 class="text-base md:text-2xl">10K <sup>+</sup>
+                    </h2>
                     <P class="text-xs md:text-sm pt-5">HAPPY CUSTOMERS</P>
-                </h2>
-                <h2 class="text-base md:text-2xl">50K <SUp>+</SUp>
+                </div>
+                <div>
+                    <h2 class="text-base md:text-2xl">50K <SUp>+</SUp>
+                    </h2>
                     <P class="text-xs md:text-sm pt-5">NEW ARRIVALS MONTHLY</P>
-                </h2>
-                <h2 class="text-base md:text-2xl">99 <SUp>%</SUp>
+                </div>
+                <div>
+                    <h2 class="text-base md:text-2xl">99 <SUp>%</SUp>
+                    </h2>
                     <P class="text-xs md:text-sm pt-5">SATISFACTION RATE</P>
-                </h2>
+                </div>
             </article>
         </section>
         <section>
             <div class="2xl:container 2xl:mx-auto hidden px-5 bg-[#d6ccc2] w-full md:flex justify-between items-center h-150">
-
-                <div class="w-[60%] object-cover">
-                    <article class="relative">
+               
+                    <article class="w-3/5 relative">
                         <img src="assets/img/file_000000007a3081f4b23c010eb13d4bb4.png" alt="men"
                             class="h-145.5 rounded-xl">
-                        <div class="absolute top-20 left-5 flex flex-col items-start gap-7 f3 w-90  leading-10 text-white">
+                        <div
+                            class="absolute top-20 left-5 flex flex-col items-start gap-7 f3 w-90  leading-10 text-white">
                             <span class="text-xs">MEN'S COLLECTIONS</span>
-                        <h1 class="text-3xl w-112.5">EFTORTLESS
-                            STYLE. EVERYDAY.</h1>
-                        <P class="text-sm leading-10">Modern pieces crafted for comfort, quality and
-                            confidence.</P>
-                        <BUtton class="p-2 bg-white text-black text-base cursor-pointer mt-4 transition-colors duration-500 hover:text-[#5f0000] hover:bg-black">EXPLORE MEN</BUtton>
+                            <h2 class="text-3xl w-full">EFFORTLESS
+                                STYLE. EVERYDAY.</h2>
+                            <P class="text-sm leading-10">Modern pieces crafted for comfort, quality and
+                                confidence.</P>
+                            <button
+                                class="p-2 bg-white text-black text-base cursor-pointer mt-4 transition-colors duration-500 hover:text-[#5f0000] hover:bg-black">EXPLORE
+                                MEN</button>
                         </div>
                     </article>
-                </div>
-                <div class="flex flex-col gap-5 w-[50%] object-cover">
+                
+                <div class="flex flex-col gap-5 w-2/5 ">
                     <article><img src="assets/img/file_000000005ed8821080084d404da9cc52.png" alt="women"
-                            class="h-70 rounded-xl"></article>
-                    <article><img src="assets/img/file_00000000f37c8210bd157dabb1dc9c06.png" alt="shose"
-                            class="h-70 rounded-xl"></article>
+                            class="w-full h-70 rounded-xl object-cover"></article>
+                    <article><img src="assets/img/file_00000000f37c8210bd157dabb1dc9c06.png" alt="shoes"
+                            class="w-full h-70 rounded-xl object-cover"></article>
                 </div>
 
             </div>
