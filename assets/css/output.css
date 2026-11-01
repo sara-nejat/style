@@ -453,6 +453,12 @@
   .text-\[20px\] {
     font-size: 20px;
   }
+  .text-\[21px\] {
+    font-size: 21px;
+  }
+  .text-\[22px\] {
+    font-size: 22px;
+  }
   .text-\[90px\] {
     font-size: 90px;
   }
@@ -463,8 +469,17 @@
   .text-\[\#6b0404\] {
     color: #6b0404;
   }
+  .text-\[2\] {
+    color: 2;
+  }
   .text-\[3\] {
     color: 3;
+  }
+  .text-\[22\] {
+    color: 22;
+  }
+  .text-\[22p\] {
+    color: 22p;
   }
   .text-black {
     color: var(--color-black);
