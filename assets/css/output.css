@@ -438,6 +438,9 @@
   .text-\[1px\] {
     font-size: 1px;
   }
+  .text-\[2px\] {
+    font-size: 2px;
+  }
   .text-\[10px\] {
     font-size: 10px;
   }
@@ -458,6 +461,12 @@
   }
   .text-\[22px\] {
     font-size: 22px;
+  }
+  .text-\[25px\] {
+    font-size: 25px;
+  }
+  .text-\[27px\] {
+    font-size: 27px;
   }
   .text-\[90px\] {
     font-size: 90px;
@@ -480,6 +489,9 @@
   }
   .text-\[22p\] {
     color: 22p;
+  }
+  .text-\[px\] {
+    color: px;
   }
   .text-black {
     color: var(--color-black);
