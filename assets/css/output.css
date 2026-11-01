@@ -441,6 +441,9 @@
   .text-\[2px\] {
     font-size: 2px;
   }
+  .text-\[3px\] {
+    font-size: 3px;
+  }
   .text-\[10px\] {
     font-size: 10px;
   }
@@ -467,6 +470,15 @@
   }
   .text-\[27px\] {
     font-size: 27px;
+  }
+  .text-\[28px\] {
+    font-size: 28px;
+  }
+  .text-\[30px\] {
+    font-size: 30px;
+  }
+  .text-\[32px\] {
+    font-size: 32px;
   }
   .text-\[90px\] {
     font-size: 90px;
