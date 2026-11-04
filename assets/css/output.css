@@ -21,12 +21,8 @@
     --text-lg--line-height: calc(1.75 / 1.125);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
-    --text-4xl: 2.25rem;
-    --text-4xl--line-height: calc(2.5 / 2.25);
     --font-weight-normal: 400;
     --font-weight-bold: 700;
-    --font-weight-extrabold: 800;
-    --font-weight-black: 900;
     --radius-md: 0.375rem;
     --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
@@ -218,6 +214,9 @@
   .col-span-6 {
     grid-column: span 6 / span 6;
   }
+  .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
+  }
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
   }
@@ -247,14 +246,11 @@
   .h-9 {
     height: calc(var(--spacing) * 9);
   }
-  .h-68 {
-    height: calc(var(--spacing) * 68);
+  .h-66 {
+    height: calc(var(--spacing) * 66);
   }
-  .h-69 {
-    height: calc(var(--spacing) * 69);
-  }
-  .h-140 {
-    height: calc(var(--spacing) * 140);
+  .h-136 {
+    height: calc(var(--spacing) * 136);
   }
   .h-full {
     height: 100%;
@@ -265,8 +261,8 @@
   .w-44 {
     width: calc(var(--spacing) * 44);
   }
-  .w-82 {
-    width: calc(var(--spacing) * 82);
+  .w-75 {
+    width: calc(var(--spacing) * 75);
   }
   .w-auto {
     width: auto;
@@ -283,9 +279,6 @@
   .resize {
     resize: both;
   }
-  .grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
   .grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
@@ -301,6 +294,9 @@
   .justify-between {
     justify-content: space-between;
   }
+  .justify-center {
+    justify-content: center;
+  }
   .gap-1 {
     gap: var(--spacing);
   }
@@ -312,9 +308,6 @@
   }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
-  }
-  .gap-5 {
-    gap: calc(var(--spacing) * 5);
   }
   .gap-6 {
     gap: calc(var(--spacing) * 6);
@@ -346,15 +339,6 @@
   }
   .bg-\[\#b8aa9a6e\] {
     background-color: #b8aa9a6e;
-  }
-  .bg-\[\#b8aa9a7e\] {
-    background-color: #b8aa9a7e;
-  }
-  .bg-\[\#b8aa9a9f\] {
-    background-color: #b8aa9a9f;
-  }
-  .bg-\[\#b8aa9a63\] {
-    background-color: #b8aa9a63;
   }
   .bg-\[\#e2d3c6\] {
     background-color: #e2d3c6;
@@ -404,10 +388,6 @@
   .text-center {
     text-align: center;
   }
-  .text-4xl {
-    font-size: var(--text-4xl);
-    line-height: var(--tw-leading, var(--text-4xl--line-height));
-  }
   .text-base {
     font-size: var(--text-base);
     line-height: var(--tw-leading, var(--text-base--line-height));
@@ -433,23 +413,24 @@
   .text-\[18px\] {
     font-size: 18px;
   }
-  .font-black {
-    --tw-font-weight: var(--font-weight-black);
-    font-weight: var(--font-weight-black);
+  .text-\[52px\] {
+    font-size: 52px;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
-  .font-extrabold {
-    --tw-font-weight: var(--font-weight-extrabold);
-    font-weight: var(--font-weight-extrabold);
-  }
   .text-\[\#6b0404\] {
     color: #6b0404;
   }
-  .text-\[\#fdf7f4d7\] {
-    color: #fdf7f4d7;
+  .text-\[\#fdf7f4be\] {
+    color: #fdf7f4be;
+  }
+  .text-\[\#fdf7f4c9\] {
+    color: #fdf7f4c9;
+  }
+  .text-\[\#fdf7f4d8\] {
+    color: #fdf7f4d8;
   }
   .text-black {
     color: var(--color-black);
@@ -504,25 +485,19 @@
       }
     }
   }
-  @media (width >= 955px) {
+  @media (width >= 930px) {
     @media (width < 1023px) {
-      .min-\[955px\]\:max-\[1023px\]\:h-\[316px\] {
-        height: 316px;
+      .min-\[930px\]\:max-\[1023px\]\:h-\[307px\] {
+        height: 307px;
       }
-      .min-\[955px\]\:max-\[1023px\]\:h-\[650px\] {
-        height: 650px;
+      .min-\[930px\]\:max-\[1023px\]\:h-\[630px\] {
+        height: 630px;
       }
     }
   }
   @media (width >= 48rem) {
     .md\:col-span-1 {
       grid-column: span 1 / span 1;
-    }
-    .md\:col-span-2 {
-      grid-column: span 2 / span 2;
-    }
-    .md\:col-span-3 {
-      grid-column: span 3 / span 3;
     }
     .md\:mt-16 {
       margin-top: calc(var(--spacing) * 16);
@@ -566,75 +541,23 @@
     }
   }
   @media (width >= 64rem) {
-    .lg\:h-7 {
-      height: calc(var(--spacing) * 7);
+    .lg\:h-82 {
+      height: calc(var(--spacing) * 82);
     }
-    .lg\:h-73\.5 {
-      height: calc(var(--spacing) * 73.5);
-    }
-    .lg\:h-74 {
-      height: calc(var(--spacing) * 74);
-    }
-    .lg\:h-74\.5 {
-      height: calc(var(--spacing) * 74.5);
-    }
-    .lg\:h-151 {
-      height: calc(var(--spacing) * 151);
-    }
-    .lg\:h-152 {
-      height: calc(var(--spacing) * 152);
-    }
-    .lg\:h-152\.5 {
-      height: calc(var(--spacing) * 152.5);
-    }
-    .lg\:h-153 {
-      height: calc(var(--spacing) * 153);
-    }
-    .lg\:h-\[3\] {
-      height: 3;
-    }
-    .lg\:h-\[73\.5\] {
-      height: 73.5;
-    }
-    .lg\:h-\[296\] {
-      height: 296;
-    }
-    .lg\:h-\[296p\] {
-      height: 296p;
-    }
-    .lg\:h-\[296px\] {
-      height: 296px;
-    }
-    .lg\:h-\[297px\] {
-      height: 297px;
-    }
-    .lg\:h-\[298px\] {
-      height: 298px;
-    }
-    .lg\:h-\[299px\] {
-      height: 299px;
-    }
-    .lg\:h-\[300\] {
-      height: 300;
-    }
-    .lg\:h-\[300px\] {
-      height: 300px;
-    }
-    .lg\:h-\[px\] {
-      height: px;
-    }
-    .lg\:gap-0 {
-      gap: 0px;
+    .lg\:h-168 {
+      height: calc(var(--spacing) * 168);
     }
     .lg\:text-sm {
       font-size: var(--text-sm);
       line-height: var(--tw-leading, var(--text-sm--line-height));
     }
-    .lg\:text-\[2px\] {
-      font-size: 2px;
+    .lg\:text-\[23px\] {
+      font-size: 23px;
     }
-    .lg\:text-\[21px\] {
-      font-size: 21px;
+  }
+  @media (width >= 80rem) {
+    .xl\:gap-0 {
+      gap: 0px;
     }
   }
   @media (width >= 96rem) {
@@ -681,7 +604,11 @@
 }
 @font-face {
   font-family: "font3";
-  src: url(../font/Vazirmatn-ExtraBold.ttf);
+  src: url(../font/IpanemaSecco-463W.ttf);
+}
+@font-face {
+  font-family: "font4";
+  src: url(../font/DoweliaThin-ovlBV.otf);
 }
 body, button, input {
   font-family: "font1";
@@ -689,8 +616,11 @@ body, button, input {
 .F {
   font-family: "font2";
 }
-.f3 {
-  font-family: "font2";
+.F1 {
+  font-family: "font3";
+}
+.F2 {
+  font-family: "font4";
 }
 @property --tw-border-style {
   syntax: "*";

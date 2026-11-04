@@ -9,7 +9,13 @@
 }
 @font-face {
     font-family: "font3";
-    src: url(../font/Vazirmatn-ExtraBold.ttf);
+    src: url(../font/IpanemaSecco-463W.ttf);
+    
+}
+@font-face {
+    font-family: "font4";
+    src: url(../font/DoweliaThin-ovlBV.otf);
+    
 }
 body,
 button,
@@ -19,7 +25,11 @@ input{
 .F{
     font-family: "font2";
 }
-.f3{
-        font-family: "font2";
+.F1{
+        font-family: "font3";
+        
+}
+.F2{
+    font-family: "font4";
 }
 
